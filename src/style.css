@@ -1,0 +1,15 @@
+body {
+    font-size: 100px;
+    color: red;
+}
+
+.hell {
+    color: red;
+    background: url('./icon.jpg');
+    font-size: 50px;
+}
+
+.hurray {
+    color: blue;
+    font-size: 60px;
+}
