@@ -39,3 +39,9 @@ export function getData() {
         type: "DATA_REQUESTED"
     };
 }
+
+export function test() {
+    return {
+        type: "TEST_REDUX_ACTION"
+    }
+}

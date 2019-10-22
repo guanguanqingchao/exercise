@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { connect } from "react-redux";
 import uuidv1 from "uuid";
 import { addArticle } from "actions";
+import { useSelector, useDispatch, connect } from 'react-redux'
 
 
 
@@ -55,6 +55,6 @@ function mapDispatchToProps(dispatch) {
     };
 }
 
+// const Form = connect(null, mapDispatchToProps)(ConnectedForm);
 const Form = connect(null, mapDispatchToProps)(ConnectedForm);
-
 export default Form;

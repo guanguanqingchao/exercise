@@ -3,6 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 import List from "./list.jsx";
 import Form from './form.jsx';
 import Post from './post.jsx';
+import { Counter } from './count.jsx';
 
 export function HomePage() {
     function handleClick() {
@@ -24,9 +25,12 @@ export function HomePage() {
                 <button onClick={() => handleClick()}> 点击</button>
 
             </p>
+
+            <Counter initialCount={3} name={'guanqingchao'} />
+
             <div className="row mt-5">
                 <div className="col-md-4 offset-md-1">
-                    <h2>Articles</h2>
+                    <h2>Articles Lists</h2>
                     <List />
 
                 </div>
