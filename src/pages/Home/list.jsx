@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useState, useEffect } from "react";
 import { connect, useSelector, useDispatch, useStore } from "react-redux";
 import { TEST_REDUX_ACTION } from 'actions'
 
@@ -10,15 +10,34 @@ const ConnectedList = () => {
     const dispatch = useDispatch()
     const store = useStore()
 
-    // console.log('store', store)
+
+    let timer
+
+    const [value, setValue] = useState(0)
+
+    useEffect(() => {
+        return () => {
+            console.log('90909090', timer)
+            window.clearTimeout(timer)
+
+        }
+    })
 
 
+    function dealClick() {
+        timer = window.setTimeout(() => {
+            setValue(1000)
+        }, 3000)
+
+    }
 
 
 
 
     return (
         <div>
+            <h2>value is {value}</h2>
+            <button onClick={() => dealClick()}>点击测试</button>
             <ul className="list-group list-group-flush">
                 {articles.map(el => (
                     <li className="list-group-item" key={el.id}>

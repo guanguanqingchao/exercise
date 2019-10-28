@@ -10,36 +10,36 @@ export class Post extends React.Component {
         this.state = {
 
         }
-        console.log('-----------constructor------')
+        // console.log('-----------constructor------')
     }
 
     // static getDerivedStateFromProps(nextProps, prevState) {
     //     // console.log('---------- getDerivedStateFromProps-------', nextProps, prevState)
     // }
 
-    componentWillMount() {
-        console.log('----------componentWillMount------')
+    // componentWillMount() {
+    //     console.log('----------componentWillMount------')
 
-    }
-    componentDidMount() {
-        console.log('-----------componentDidMount-----')
-        this.props.getData();
-    }
-    componentWillReceiveProps() {
-        console.log('-----componentWillReceiveProps -----')
+    // }
+    // componentDidMount() {
+    //     console.log('-----------componentDidMount-----')
+    //     this.props.getData();
+    // }
+    // componentWillReceiveProps() {
+    //     console.log('-----componentWillReceiveProps -----')
 
-    }
-    shouldComponentUpdate(nextProps, nextState) {
-        console.log('=========should====')
-        return true
+    // }
+    // shouldComponentUpdate(nextProps, nextState) {
+    //     console.log('=========should====')
+    //     return true
 
-    }
-    componentWillUpdate() {
-        console.log('-----componentWillUpdate-----')
-    }
-    componentDidUpdate() {
-        console.log('------componentDidUpdate ---')
-    }
+    // }
+    // componentWillUpdate() {
+    //     console.log('-----componentWillUpdate-----')
+    // }
+    // componentDidUpdate() {
+    //     console.log('------componentDidUpdate ---')
+    // }
     render() {
         console.log('---------render-----')
         const { articles } = this.props
