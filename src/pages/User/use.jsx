@@ -15,9 +15,9 @@ export function UserPage(props) {
     let location = useLocation();
     let history = useHistory();
 
-    console.log(history, location);
+    // console.log(history, location);
     //  <v5.1
-    console.log(props.match.params)
+    // console.log(props.match.params)
 
 
     useEffect(() => {

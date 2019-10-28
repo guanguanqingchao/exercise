@@ -6,8 +6,8 @@ import { useSelector, useDispatch, connect } from 'react-redux'
 
 
 class ConnectedForm extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
 
         this.state = {
             title: ""
@@ -23,12 +23,13 @@ class ConnectedForm extends Component {
         event.preventDefault();
         const { title } = this.state;
         const id = uuidv1();
-        this.props.addArticle({ title, id });//dispatch a action
+        this.props.addArticle({ title, id }); //dispatch a action
         this.setState({ title: "" });
     }
 
     render() {
         const { title } = this.state;
+
         return (
             <form onSubmit={(e) => this.handleSubmit(e)}>
                 <div className="form-group">

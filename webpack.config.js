@@ -5,8 +5,6 @@ const {
 } = require('clean-webpack-plugin');
 
 
-console.log('-------', path.resolve(__dirname, '..', 'src'), __dirname)
-console.log('=======', path.resolve(__dirname, 'src'))
 
 
 module.exports = {

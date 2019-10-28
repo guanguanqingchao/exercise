@@ -10,9 +10,9 @@ const ConnectedList = () => {
     const dispatch = useDispatch()
     const store = useStore()
 
-    console.log('store', store)
+    // console.log('store', store)
 
-    
+
 
 
 

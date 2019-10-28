@@ -3,7 +3,6 @@ import { Route, Switch, Redirect } from 'react-router-dom'
 import * as pages from './pages'
 
 
-console.log(pages)
 export default function App() {
     return (
         <Switch>

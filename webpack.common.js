@@ -12,7 +12,6 @@ const {
 } = require('clean-webpack-plugin');
 
 
-console.log('======', path.resolve(__dirname, 'src/saga'))
 
 module.exports = {
     entry: {

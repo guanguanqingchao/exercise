@@ -12,15 +12,15 @@ import { Provider } from 'react-redux';
 import store from "store/index";
 import { addArticle } from "actions";
 
-console.log('store', store)
+// console.log('store', store)
 
 window.store = store;
 window.addArticle = addArticle;
-console.log('----------', store.getState())
-store.subscribe(() => console.log('..............redux! dispath an action!!!.........'))
+// console.log('----------', store.getState())
+// store.subscribe(() => console.log('..............redux! dispath an action!!!.........'))
 store.dispatch(addArticle({ title: 'React Redux Tutorial for Beginners', id: 1 }))
 store.dispatch(addArticle({ title: 'this is another action', id: 2 }))
-console.log('----------', store.getState())
+// console.log('----------', store.getState())
 
 
 
